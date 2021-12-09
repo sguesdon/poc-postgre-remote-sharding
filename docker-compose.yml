@@ -1,31 +1,31 @@
 version: '3.1'
 services:
   node1:
-    image: postgres
+    image: citusdata/citus
     restart: always
     container_name: node1
     environment:
       POSTGRES_PASSWORD: postgres
   node2:
-    image: postgres
+    image: citusdata/citus
     restart: always
     container_name: node2
     environment:
       POSTGRES_PASSWORD: postgres
   node3:
-    image: postgres
+    image: citusdata/citus
     restart: always
     container_name: node3
     environment:
       POSTGRES_PASSWORD: postgres
   node4:
-    image: postgres
+    image: citusdata/citus
     restart: always
     container_name: node4
     environment:
       POSTGRES_PASSWORD: postgres
   node5:
-    image: postgres
+    image: citusdata/citus
     restart: always
     container_name: node5
     environment:
