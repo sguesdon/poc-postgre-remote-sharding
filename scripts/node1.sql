@@ -13,4 +13,6 @@ SELECT citus_add_node('node3', 5432);
 SELECT citus_add_node('node4', 5432);
 SELECT citus_add_node('node5', 5432);
 
-SELECT rebalance_table_shards();
+SELECT rebalance_table_shards('temperature');
+
+SELECT * from citus_get_active_worker_nodes();
